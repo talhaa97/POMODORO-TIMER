@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center flex-column align-items-center">
+        <h1 class="display-3">POMODORO <br> <span class="d-flex justify-content-center">TIMER</span></h1>
+        <br>
+        <!-- timer div -->
+        <div>
+            <p class="display-2"><span class="minutes">00</span> : <span class="seconds">00</span> </p>
+        </div>
+        <!-- task input -->
+        <div>
+            <input type="text" id="task" class="w-100 display-4">
+        </div>
+        <br>
+        <!-- work and break time box -->
+        <div>
+            <div class="work display-5">
+                <p class="">Work Time</p>
+                <p class="w-100 d-flex justify-content-center">25</p>
+            </div>
+            <div class="work display-5">
+                <p class="">Break Time</p>
+                <p class="w-100 d-flex justify-content-center">5</p>
+            </div>
+        </div>
+        <br>
+        <!-- hidden msg -->
+        <p class="text-danger d-none" id="msg">Fill the above field to start the timer</p>
+        <div>
+            
+            <p class="btn bg-info d-none" id="pause-btn">
+                <span class="display-5">Pause</span> 
+            </p>
+            <p class="btn bg-info" id="start-btn">
+                <span class="display-5">Start</span> 
+            </p>
+            <p class="btn bg-info d-none" id="stop-btn">
+                <span class="display-5">Stop</span> 
+            </p>
+        </div>
+
+
+
+        
+        <!-- completed tasks -->
+        <h4>YOUR COMPLETED TASKS</h4>
+
+        <div id="tasks-completed">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
